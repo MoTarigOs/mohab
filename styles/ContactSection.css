@@ -1,0 +1,93 @@
+.ContactSection{
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    padding: 64px 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    z-index: 1;
+
+    h1{
+        background: -webkit-linear-gradient(#ff8b17, #ffea00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2.5rem;
+        margin-bottom: 4px;
+    }
+
+    .reasons{
+        width: 100%;
+        max-width: 400px;
+
+        ul{
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+
+            li{
+                padding: 16px;
+                width: 200px;
+                height: 96px;
+                border: 2px solid var(--lightBorderColor);
+                border-radius: 2px;
+                position: relative;
+                cursor: pointer;
+                transition: all 0.3s ease-out;
+
+                h2{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    margin-bottom: 12px;
+                    color: var(--black);
+                }
+
+                p{
+                    font-size: 0.85rem;
+                    color: var(--grey);
+                }  
+                
+                span{
+                    position: absolute;
+                    width: 2px;
+                    height: 16px;
+                    background: rgb(252, 184, 56);
+                    top: 18px;
+                    left: -1px;
+                }
+            }
+
+            li:hover{
+                border-color: var(--darkBorderColor);
+                transition: all 0.3s ease-out;
+            }
+        }
+    }
+}
+
+.ContactSection::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: calc(50% - 50vw);
+    width: 100vw;
+    height: 100%;
+    background: var(--white);
+    z-index: -1;
+}
+
+@media screen and (max-width: 400px){
+    .ContactSection .reasons ul{
+        grid-template-columns: 1fr;
+        gap: 16px;
+
+        li{
+            width: 100%;
+        }
+    }
+}

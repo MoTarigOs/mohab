@@ -1,0 +1,101 @@
+.SignUp{
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    padding: 32px 12px;
+
+    .formDiv{
+        width: 100%;
+        max-width: 480px;
+        padding: 64px;
+        border-radius: 4px;
+        border: 2px solid var(--darkBorderColor);
+
+        h1{
+            margin-bottom: 32px;
+            margin-left: -2px;
+            color: var(--black);
+        }
+
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            label{
+                font-size: 0.8rem;
+                margin-bottom: 12px;
+                font-weight: 600;
+                color: var(--black);
+            }
+
+            input{
+                width: 100%;
+                padding-bottom: 4px;
+                margin-bottom: 32px;
+                border: none;
+                background: transparent;
+                border-bottom: 2px solid var(--darkBorderColor);
+                outline: none;
+            }
+
+            .policies{
+                display: flex;
+                width: 100%;
+                height: fit-content;
+                align-items: center;
+                margin-bottom: 32px;
+
+                input[type=checkbox]{
+                    width: fit-content;
+                    height: fit-content;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                    margin-right: 8px;
+                    cursor: pointer;
+                    accent-color: orange;
+                }
+
+                p{
+                    color: var(--lightGrey);
+                    
+                    span{
+                        color: rgba(34, 119, 255, 0.693);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            background: orange;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+        }
+
+        button:hover{
+            transition: all 0.3s ease-in;
+            background: rgba(255, 166, 0, 0.803);
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .SignUp{
+        align-items: start;
+        min-height: unset;
+
+        .formDiv{
+            padding: 12px;
+        }
+    }
+}
