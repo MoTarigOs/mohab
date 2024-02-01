@@ -64,6 +64,7 @@
 
                 & li {
                     width: 128px;
+                    max-height: 160px;
                     background: var(--white);
                     padding: 12px;
                     border-radius: 12px;
@@ -75,6 +76,7 @@
                         padding: 16px;
                         height: auto;
                         margin-bottom: 4px;
+                        object-fit: cover;
                     }
 
                     h3 {
@@ -93,11 +95,13 @@
     .printerImage {
         width: 100%;
         max-width: 680px;
+        max-height: 600px;
         position: relative;
 
         img {
             width: 100%;
             height: auto;
+            object-fit: cover;
             scale: 1;
         }
 

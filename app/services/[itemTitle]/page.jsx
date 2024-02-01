@@ -54,7 +54,7 @@ const page = ({ params }) => {
           arr[i].address = address;
           arr[i].quantity = quantity;
 
-          setCartItems([cartItem, ...cartItems]);
+          setCartItems(arr);
       
           setAddedToCart(true);
           setTimeout(() => {

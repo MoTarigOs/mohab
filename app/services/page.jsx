@@ -43,7 +43,7 @@ const page = () => {
 
         <div>
           <h2>{getConstName('Best Deal', isArabic)}<span>{getConstName('View details', isArabic)}</span></h2>
-          <p><span style={{ marginLeft: isArabic && 16 }}>{getConstName('20% off', isArabic)}</span>{getConstName('for every 1000 unit printed', isArabic)}</p>
+          <p><span style={{ marginRight: isArabic && 0, marginLeft: isArabic && 16 }}>{getConstName('20% off', isArabic)}</span>{getConstName('for every 1000 unit printed', isArabic)}</p>
         </div>
         
       </div>
