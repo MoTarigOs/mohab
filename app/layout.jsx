@@ -2,7 +2,7 @@
 
 import '@styles/MainLayout.css';
 import DataContext from '@utils/Context';
-import Main from './main';
+import Main from './Main';
 import { useState } from 'react';
 
 /* 
