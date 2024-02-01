@@ -1,3 +1,12 @@
+This website developed using React.js & Next.js
+
+Contact the developer:
+
+    Facebook: https://www.facebook.com/elgade.websites
+    LinkedIn: https://www.linkedin.com/in/elgade/
+    Whatsapp: https://wa.me/+963991012169
+    
+
 App Structure :
 
 # Header
