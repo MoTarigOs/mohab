@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getConstDetails, getConstName } from "@utils/getLangItems";
 import '@styles/component/ServiceCard.css';
 import { getServiceSaleBgColor } from "@utils/Constants";
+import Link from "next/link";
 
 const ServiceCard = ({ item, isArabic }) => {
 
@@ -16,9 +17,13 @@ const ServiceCard = ({ item, isArabic }) => {
             <h2>{getConstName(item.title, isArabic)}</h2>
 
             <p>{getConstDetails(item.title, isArabic)}</p>
-
-            <button onClick={() => location.href = `/services/${item.title.replaceAll(' ', '-').toLowerCase()}`}>
-              {getConstName('View Details', isArabic)}
+            
+            <button>
+              <Link href={`/services/${item.title.replaceAll(' ', '-').toLowerCase()}`}>
+                  <p>
+                  {getConstName('View Details', isArabic)}
+                  </p>
+              </Link>              
             </button>
 
         </div>

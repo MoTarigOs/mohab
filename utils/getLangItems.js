@@ -86,7 +86,8 @@ const names = [
     ['We provide Printing, Designing & Advertising services', 'نقدم خدمات الطباعة و التصميم والاعلانات'],
     ['Did you like our website ?', 'هل اعجبت بموقعنا الالكتروني ؟'],
     ['Contact the developer to get your own website', 'تواصل مع المطور لتمتلك موقعك الخاص'],
-    ['View services', 'خدماتنا']
+    ['View services', 'خدماتنا'],
+    ['More Services', 'خدمات اكثر']
 ];
 
 

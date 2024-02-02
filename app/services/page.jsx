@@ -10,6 +10,7 @@ import { useContext, useEffect, useState } from 'react';
 import { handleSearchByCatgories, handleSearchByText } from '@utils/Logic';
 import { Context } from '@utils/Context';
 import { getConstName } from '@utils/getLangItems';
+import Link from 'next/link';
 
 const page = () => {
 
@@ -42,8 +43,8 @@ const page = () => {
       <div className='best_deal'>
 
         <div>
-          <h2>{getConstName('Best Deal', isArabic)}<span>{getConstName('View details', isArabic)}</span></h2>
-          <p><span style={{ marginRight: isArabic && 0, marginLeft: isArabic && 16 }}>{getConstName('20% off', isArabic)}</span>{getConstName('for every 1000 unit printed', isArabic)}</p>
+          <h2>{getConstName('Best Deal', isArabic)}<Link href={'/services/document-print'}>{getConstName('View details', isArabic)}</Link></h2>
+          <p><span>{getConstName('20% off', isArabic)}</span>{getConstName('for every 1000 unit printed', isArabic)}</p>
         </div>
         
       </div>

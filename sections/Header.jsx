@@ -64,9 +64,9 @@ const Header = () => {
 
         {isLogin && <span id="loginSpan" onClick={() => setIsLogin(false)}/>}
 
-        <div className="headerLogo" onClick={handleLogoClick}>
+        <Link href={'/'}><div className="headerLogo">
           <Image src={isArabic ? (isDarkMode ? LogoIconARDark : LogoIconAR) : (isDarkMode ? LogoIconENDark : LogoIconEN)} alt="Mohab logo"/>
-        </div>
+        </div></Link>
 
         {!isMobile && <><ul className="headerButtons">
 

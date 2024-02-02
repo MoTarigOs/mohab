@@ -57,8 +57,8 @@ const LandingSection = ({ isArabic }) => {
 
         <div className="printerImage">
           <Image src={PrintIllustrator}/>
-          <span id="orangeSpan" onClick={() => location.href='/services'}/>
-          <span id="greenSpan" onClick={() => location.href='/about'}/>
+          <span id="orangeSpan"><Link href={'/services'}/></span>
+          <span id="greenSpan"><Link href={'/about'}/></span>
         </div>
 
     </div>

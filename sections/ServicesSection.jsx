@@ -23,7 +23,7 @@ const ServicesSection = ({ isArabic }) => {
         ))}
       </ul>
 
-      <Link href="/services">More Services</Link>
+      <Link href="/services">{getConstName('More Services', isArabic)}</Link>
 
     </div>
 
