@@ -202,6 +202,7 @@
                     transform: translateY(-4px);
                     padding: 8px 12px;
                     border-radius: 8px;
+                    margin-right: 16px;
                 }
             }
         }
