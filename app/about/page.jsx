@@ -18,7 +18,7 @@ const page = () => {
 
     const developerFacebookUrl = 'https://www.facebook.com/elgade.websites';
     const developerLinkedInUrl = 'https://www.linkedin.com/in/elgade/';
-    const developerWhatsappUrl = 'https://wa.me/+963991012169';
+    const developerWhatsappUrl = '';
 
     const { setSelectedRouter, isArabic } = useContext(Context);
 
