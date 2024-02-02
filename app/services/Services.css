@@ -181,11 +181,6 @@
                     margin-right: 16px;
                 }
 
-                a:dir(rtl){
-                    margin-right: 0;
-                    margin-left: 16px;
-                }
-
                 a:hover{
                     background: white;
                     color: var(--orange);
