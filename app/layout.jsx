@@ -20,19 +20,21 @@ const MainLayout = ({ children }) => {
 
             <head>
 
-            <title>Mohab</title>
+                <title>Mohab</title>
 
-            <meta name="description" content="A brief description of the page content." />
+                <meta name="description" content="A brief description of the page content." />
 
-            <meta name="keywords" content="Print, Design, Ads, Website" />
+                <meta name="keywords" content="Print, Design, Ads, Website" />
 
-            <meta property="og:title" content="Mohab" />
-            
-            <meta property="og:description" content="Printing & designing services provider" />
-            
-            <meta property="og:image" content="https://f003.backblazeb2.com/file/personal-use-mot-tarig/mohab_logo_en.png"/>
+                <meta property="og:title" content="Mohab" />
+                
+                <meta property="og:description" content="Printing & designing services provider" />
+                
+                <meta property="og:image" content="https://f003.backblazeb2.com/file/personal-use-mot-tarig/mohab_logo_en.png"/>
 
-            <link rel="icon" sizes='96x96' href="/myicon.png" />
+                <link rel="icon" sizes='96x96' href="/myicon.png" />
+
+                <meta name="google-site-verification" content="0w8spI0ZzVdpUgQwLPmSbE6MtmYd6_HHVgRwsD1uFss" />
 
             </head>
 
